@@ -35,7 +35,7 @@ export const MaybeScreenContainer = ({
 export function MaybeScreen({ visible, children, ...rest }: Props) {
   if (Screens?.screensEnabled?.()) {
     return (
-      <Screens.Screen activityState={visible ? 2 : 1} {...rest}>
+      <Screens.Screen activityState={visible ? 2 : 0} {...rest}>
         {children}
       </Screens.Screen>
     );
